@@ -1,14 +1,17 @@
 .card {
-  height: 175px;
+  height: 225px;
   width: 250px;
   background-position: center;
   color: white;
   margin: 40px;
   background-size: cover;
+  border-style: solid;
+  border-width: 10px;
+  border-bottom-width: 30px;
+  box-shadow: 1px, 1px, 2px rgba(0, 0, 0, 0.2);
 }
 
 .card-container {
   display: flex;
   justify-content: center;
-  border-style:
 }
