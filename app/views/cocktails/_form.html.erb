@@ -3,6 +3,8 @@
   <%= f.error_notification %>
   <div class="form-inputs">
     <%= f.input :name, label: false, placeholder: 'enter cocktail name', input_html: { class: 'text-center form' } %>
+      <%= f.input :photo, label: false, input_html: { class: 'center'} %>
+      <%= f.input :photo_cache, label:false, as: :hidden, input_html: { class: 'center'} %>
   </div>
 
   <div class="form-actions">
