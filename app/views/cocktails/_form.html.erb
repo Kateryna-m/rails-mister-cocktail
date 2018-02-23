@@ -1,0 +1,12 @@
+
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.error_notification %>
+  <div class="form-inputs">
+    <%= f.input :name, label: false, placeholder: 'enter cocktail name', input_html: { class: 'text-center form' } %>
+  </div>
+
+  <div class="form-actions">
+    <p><%= f.button :submit, value: 'create my cocktail', class: 'btn btn-danger' %></p>
+  </div>
+<% end %>
+

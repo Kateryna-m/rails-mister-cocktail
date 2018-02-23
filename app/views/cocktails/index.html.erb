@@ -1,0 +1,11 @@
+<div class="container text-center">
+    <h3>list of awesome cocktails</h3>
+    <div class=" text-center"><p><% @cocktails.each do |cocktail| %></p>
+      <p clas="white"><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+      <% end %>
+      <p><%= link_to 'add cocktail', new_cocktail_path(@cocktail), class: "btn btn-small btn-danger" %></p>
+      <iframe src="https://giphy.com/embed/sEH3lMz5hMBEc" width="220" height="99" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dog-alcohol-booze-sEH3lMz5hMBEc"></a></p>
+    </div>
+  </div>
+
+

@@ -1,0 +1,15 @@
+<div class="container text-center">
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.error_notification %>
+  <h3><%= @cocktail.name %></h3>
+  <div class="form-inputs">
+    <%= f.input :description, label: false, placeholder: 'enter dose here', input_html: {class: 'text-center form'} %>
+    <%= f.input :ingredient_id, label:false, placeholder: 'ingredient', collection: Ingredient.all %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, value: 'create dose', class: 'btn btn-danger margin'%>
+  </div>
+<% end %>
+</div>
+

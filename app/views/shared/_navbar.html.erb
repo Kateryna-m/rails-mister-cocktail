@@ -1,0 +1,35 @@
+<div class="navbar-wagon">
+<h3 class="grey"><i class="fas fa-glass-martini"></i>cocktail hour</h3>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Links -->
+    <%= link_to "Home", "/", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "View all", "/cocktails", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Create", "/cocktails/new", class: "navbar-wagon-item navbar-wagon-link" %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+    <!-- Avatar with dropdown menu -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+
+          <!--  -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">View all</a></li>
+        <li><a href="#">Create</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
